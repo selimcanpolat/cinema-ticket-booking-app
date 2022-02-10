@@ -33,7 +33,7 @@ else:
             print(f"{seat_obj.get_price()} has been withdrawn from your account.")
             print("Generating your ticket PDF...")
             ticket_obj = Ticket(ticket_id_generator(), user_obj.name, seat_obj.get_price(), seat_obj.seat_id)
-            # ticket_obj.to_pdf() # TODO: add pdf generation
+            ticket_obj.to_pdf(path="")
         else:
             print("Insufficient funds.")
 
