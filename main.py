@@ -20,7 +20,7 @@ else:
     CVC_input = input("CVC: ")
     cardholder_name_input = input("Cardholder name: ")
 
-    card_obj = Card(card_type_input, card_no_input,  # TODO: make banking.db dynamic
+    card_obj = Card(card_type_input, card_no_input,
                     CVC_input, cardholder_name_input)
 
     if card_obj.validate():

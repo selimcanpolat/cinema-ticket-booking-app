@@ -37,6 +37,6 @@ class Card():
         connection = sqlite3.connect(self.database)
         connection.execute("""
         UPDATE "Card" SET "balance"=? WHERE "number"=?
-        """, [self.get_balance()-self.seat_price,self.number]) # TODO:  get the price of the seat  ????
+        """, [self.get_balance()-self.seat_price,self.number])
         connection.commit()
         connection.close()

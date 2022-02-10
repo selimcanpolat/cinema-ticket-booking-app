@@ -37,6 +37,6 @@ class Seat:
         connection = sqlite3.connect(database=self.database)
         connection.execute("""
         UPDATE "Seat" SET "taken"=1 WHERE "seat_id"=?
-        """, [self.seat_id])  # TODO: check taken value int or str
+        """, [self.seat_id])
         connection.commit()
         connection.close()
