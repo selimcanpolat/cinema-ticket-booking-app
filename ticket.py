@@ -36,4 +36,4 @@ class Ticket:
         pdf.cell(w=0, h=25, txt=str(self.seat), border=1, ln=1)
         pdf.cell(w=0, h=5, txt="", border=0, ln=1)
 
-        pdf.output(f"digital_ticket{self.id}.pdf","F")
+        pdf.output(f"digital_ticket_{self.id}.pdf","F")

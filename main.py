@@ -34,6 +34,7 @@ else:
             print("Generating your ticket PDF...")
             ticket_obj = Ticket(ticket_id_generator(), user_obj.name, seat_obj.get_price(), seat_obj.seat_id)
             ticket_obj.to_pdf(path="")
+            print("Your digital ticket is ready.")
         else:
             print("Insufficient funds.")
 
